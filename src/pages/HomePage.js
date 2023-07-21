@@ -21,11 +21,15 @@ function HomePage() {
     setBooks([...books, newBook]);
   };
 
+  const deleteBook = (id) => {
+    setBooks(books.filter((book) => book.id !== id));
+  };
+
   return (
     <>
       <h1>Home Page</h1>
       <p>This is the home page with books!</p>
-      <BookList books={books} />
+      <BookList books={books} onDelete={deleteBook} />
       <CreateBook onCreate={addBook} />
     </>
   );

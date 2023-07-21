@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 function CreateBook({ onCreate }) {
   const [title, setTitle] = useState('');
@@ -16,18 +17,20 @@ function CreateBook({ onCreate }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
+      <label htmlFor="title">
         Title:
         <input
+          id="title"
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
       </label>
       <br />
-      <label>
+      <label htmlFor="author">
         Author:
         <input
+          id="author"
           type="text"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
@@ -38,5 +41,9 @@ function CreateBook({ onCreate }) {
     </form>
   );
 }
+
+CreateBook.propTypes = {
+  onCreate: PropTypes.func.isRequired,
+};
 
 export default CreateBook;
