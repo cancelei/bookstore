@@ -4,8 +4,9 @@ import CreateBook from '../components/CreateBook';
 
 function HomePage() {
   const [books, setBooks] = useState([
-    { id: 1, title: 'Book 1', author: 'Author 1' },
-    { id: 2, title: 'Book 2', author: 'Author 2' },
+    { id: 1, title: 'The Hunger Games', author: 'Suzanne Collins' },
+    { id: 2, title: 'Dune', author: 'Frank Herbert' },
+    { id: 3, title: 'Capital in the Twenty-First Century', author: 'Suzanne Collins' },
     // initial books
   ]);
 
