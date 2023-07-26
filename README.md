@@ -2,7 +2,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Math Magician</b></h3>
+  <h3><b>Bookstore</b></h3>
 
 </div>
 
@@ -28,8 +28,8 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 React Math Magicians<a name="about-project"></a>
-This is react project that includes a real calculator for basic operations with operants. It will have many branches and clear commit messages.
+# 📖 React/Redux Bookstore<a name="about-project"></a>
+This is react redux project that includes a bookstore that stores the progress of an user's books. It uses redux to manage the state.
 
 ## 🛠 Built With Love and Passion<a name="built-with"></a>
 
@@ -42,6 +42,7 @@ This is react project that includes a real calculator for basic operations with 
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/javascript">JavaScript</a></li>
     <li><a href="https://react.dev/">React</a></li>
+    <li><a href="https://redux-toolkit.js.org/">Redux</a></li>
 
   </ul>
 </details>
@@ -62,14 +63,8 @@ This is react project that includes a real calculator for basic operations with 
 
 ### Key Features <a name="key-features"></a>
 
-- Complete APP with 3 SPA views, without Create React App.
-- Routing System using React Route and Improved Styling for all pages/Nav (Hovers);
-- Fetch Quotes on the end of the Calculator.
-- Functional Components using React
-- Improved Layout
-- Component that created all the styling.
-- React Html/Css/JavaScript best paractice
-- Using gitflow and GitHub flow
+- Basic APP UI without styling;
+- File Structure update;
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,13 +128,21 @@ N/A -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Implement testing with weekly coding partner (next PR);
+- Implement advancements on features using Redux Toolkit;
+- Add styling using CSS frameworks like Bootstrap or Material UI;
+- Add user profiles;
+- Add book recommendations based on user's reading history;
+- Add book searching and filtering;
+- Add book saving and wishlist;
+- Add progress tracking for unfinished books;
+- Add book reviews and rating system;
+- Add "currently reading" and "want to read" book lists;
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome! Please consider this issue link: [Project Issues](https://github.com/cancelei/Math-magicians2/issues)
+Contributions, issues, and feature requests are welcome! Please consider this issue link: [Project Issues](https://github.com/cancelei/bookstore/issues)
 
 ## ⭐️ Show your support <a name="support"></a>
 
