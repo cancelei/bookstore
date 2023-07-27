@@ -1,14 +1,23 @@
+import { v4 as uuid } from 'uuid';
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { addBook } from '../redux/books/booksSlice';
 
-function CreateBook({ onCreate }) {
+function CreateBook() {
+  const dispatch = useDispatch();
+
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    onCreate(title, author);
+    const bookId = uuid();
+    dispatch(addBook({
+      id: bookId,
+      title,
+      author,
+    }));
 
     // Reset form fields
     setTitle('');
@@ -20,8 +29,8 @@ function CreateBook({ onCreate }) {
       <label htmlFor="title">
         Title:
         <input
-          id="title"
           type="text"
+          placeholder="Book Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
@@ -30,8 +39,8 @@ function CreateBook({ onCreate }) {
       <label htmlFor="author">
         Author:
         <input
-          id="author"
           type="text"
+          placeholder="Book Author"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
@@ -41,9 +50,5 @@ function CreateBook({ onCreate }) {
     </form>
   );
 }
-
-CreateBook.propTypes = {
-  onCreate: PropTypes.func.isRequired,
-};
 
 export default CreateBook;
