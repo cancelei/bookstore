@@ -65,6 +65,8 @@ This is react redux project that includes a bookstore that stores the progress o
 
 - Basic APP UI without styling;
 - File Structure update;
+- Implemented Redux Toolkit on the repo.
+- Redux in Components
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
