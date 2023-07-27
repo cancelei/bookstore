@@ -12,10 +12,8 @@ function Book({
   return (
     <div>
       <h2>{title}</h2>
-      <div>new</div>
       <h3>{author}</h3>
       <h4>
-        Category:
         {category}
       </h4>
       <button type="button" onClick={() => dispatch(removeBook(id))}>Delete Book</button>
@@ -25,7 +23,7 @@ function Book({
 
 Book.propTypes = {
   book: PropTypes.shape({
-    id: PropTypes.number,
+    id: PropTypes.string,
     title: PropTypes.string,
     author: PropTypes.string,
     category: PropTypes.string,
