@@ -14,7 +14,7 @@ function CreateBook() {
 
     const bookId = uuid();
     dispatch(addBook({
-      id: bookId,
+      item_id: bookId,
       title,
       author,
     }));
