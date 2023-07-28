@@ -19,7 +19,6 @@ export const fetchBooks = createAsyncThunk('books/fetchBooks', async () => {
 export const addBook = createAsyncThunk('books/addBook', async (book) => {
   const bookId = uuid();
   const newBook = { ...book, item_id: bookId };
-  console.log('Sending data:', newBook); // Log the data
   await axios.post(`${API_BASE_URL}/${APP_ID}/books`, newBook);
   return { ...newBook, id: bookId };
 });
