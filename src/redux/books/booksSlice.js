@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
+import { v4 as uuid } from 'uuid';
 
 const API_BASE_URL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps';
 
@@ -16,8 +17,11 @@ export const fetchBooks = createAsyncThunk('books/fetchBooks', async () => {
 });
 
 export const addBook = createAsyncThunk('books/addBook', async (book) => {
-  const response = await axios.post(`${API_BASE_URL}/${APP_ID}/books`, book);
-  return { ...book, id: response.data };
+  const bookId = uuid();
+  const newBook = { ...book, item_id: bookId };
+  console.log('Sending data:', newBook); // Log the data
+  await axios.post(`${API_BASE_URL}/${APP_ID}/books`, newBook);
+  return { ...newBook, id: bookId };
 });
 
 export const removeBook = createAsyncThunk('books/removeBook', async (bookId) => {
