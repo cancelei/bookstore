@@ -8,20 +8,23 @@ function CreateBook() {
 
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState(''); // New state variable for the category
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const bookId = uuid();
     dispatch(addBook({
-      id: bookId,
+      item_id: bookId,
       title,
       author,
+      category, // Include the category in the book object
     }));
 
     // Reset form fields
     setTitle('');
     setAuthor('');
+    setCategory(''); // Reset the category
   };
 
   return (
@@ -44,6 +47,21 @@ function CreateBook() {
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
+      </label>
+      <br />
+      <label htmlFor="category">
+        Category:
+        <select
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
+        >
+          <option value="">Select a category</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Non-fiction">Non-fiction</option>
+          <option value="Biography">Biography</option>
+          <option value="History">History</option>
+          <option value="Science">Science</option>
+        </select>
       </label>
       <br />
       <button type="submit">Create Book</button>
