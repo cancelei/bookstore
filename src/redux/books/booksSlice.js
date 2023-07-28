@@ -8,7 +8,11 @@ const APP_ID = 'bb9KfC79mKUeFQwcFRIx';
 
 export const fetchBooks = createAsyncThunk('books/fetchBooks', async () => {
   const response = await axios.get(`${API_BASE_URL}/${APP_ID}/books`);
-  return response.data;
+  const books = Object.keys(response.data).map((id) => ({
+    id,
+    ...response.data[id][0],
+  }));
+  return books;
 });
 
 export const addBook = createAsyncThunk('books/addBook', async (book) => {
@@ -20,6 +24,8 @@ export const removeBook = createAsyncThunk('books/removeBook', async (bookId) =>
   await axios.delete(`${API_BASE_URL}/${APP_ID}/books/${bookId}`);
   return bookId;
 });
+
+const initialState = [];
 
 const booksSlice = createSlice({
   name: 'books',
