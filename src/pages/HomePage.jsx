@@ -9,7 +9,6 @@ function HomePage() {
 
   return (
     <>
-      <h1>Bookstore CMS</h1>
       <BookList books={books} />
       <CreateBook />
     </>
