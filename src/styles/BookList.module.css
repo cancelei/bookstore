@@ -159,7 +159,7 @@
 }
 
 .currentChapterTitle {
-  width: 4.688rem;
+  width: auto;
   height: 1.313rem;
   font-family: Roboto, sans-serif;
   font-size: 1rem;
