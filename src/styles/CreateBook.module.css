@@ -17,7 +17,8 @@
   color: #888;
 }
 
-.createBookForm input, .createBookForm select {
+.createBookForm input,
+.createBookForm select {
   width: 100%;
   padding: 10px;
   font-size: 1em;
@@ -44,7 +45,7 @@
   width: 10.875rem;
   height: 1.5rem;
   margin: 1.813rem 32.75rem 1.188rem 0;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;

@@ -17,7 +17,7 @@
 }
 
 .navTitle {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -30,7 +30,6 @@
 .navLinks {
   display: flex;
   flex-direction: row;
-
   list-style: none;
   text-decoration: none;
   color: black;
@@ -39,16 +38,14 @@
 }
 
 .navLinks > li {
- padding-left: 25px;
+  padding-left: 25px;
 }
 
 .navLink {
   list-style: none;
   text-decoration: none;
-  /* width: 3.688rem; */
   height: 1rem;
-  /* margin: 1.125rem 2.563rem 0.688rem 0; */
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
