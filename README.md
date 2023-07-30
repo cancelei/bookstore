@@ -63,8 +63,10 @@ This is react redux project that includes a bookstore that stores the progress o
 
 ### Key Features <a name="key-features"></a>
 
-- Basic APP UI without styling;
-- File Structure update;
+- Updated Styling.
+- Extra Book functionality > Select category before adding.
+- Basic APP UI without styling.
+- File Structure update.
 - Implemented Redux Toolkit on the repo.
 - Redux in Components
 
