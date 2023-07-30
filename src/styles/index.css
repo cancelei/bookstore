@@ -11,9 +11,11 @@ body {
     'Fira Sans',
     'Droid Sans',
     'Helvetica Neue',
+    'Roboto Slab',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
 }
 
 code {
