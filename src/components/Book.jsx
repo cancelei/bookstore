@@ -22,11 +22,12 @@ function Book({
 
           {/* Removal Button */}
           <div className={bookListStyles.bookButtons}>
-            <button className={bookListStyles.bookButton}>Comments</button>
+            <button type="submit" className={bookListStyles.bookButton}>Comments</button>
             <div className={bookListStyles.divider} />
-            <button className={bookListStyles.bookButton}>Edit</button>
+            <button type="submit" className={bookListStyles.bookButton}>Edit</button>
             <div className={bookListStyles.divider} />
             <button
+              type="submit"
               className={bookListStyles.bookButton}
               onClick={() => dispatch(removeBook(id))}
             >
@@ -38,7 +39,7 @@ function Book({
 
       {/* Book Reading Progress */}
       <div className={bookListStyles.ovalContainer}>
-        <div className={bookListStyles.oval}> 
+        <div className={bookListStyles.oval}>
           <div className={bookListStyles.ovalInner} />
         </div>
         <div className={bookListStyles.progressInfo}>
@@ -51,7 +52,7 @@ function Book({
       <div className={bookListStyles.currentContainer}>
         <div className={bookListStyles.currentChapter}>Current Chapter</div>
         <div className={bookListStyles.currentChapterTitle}>Chapter 17</div>
-        <button className={bookListStyles.updateButton}>Update Progress</button>
+        <button type="submit" className={bookListStyles.updateButton}>Update Progress</button>
       </div>
     </div>
   );
