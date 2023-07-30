@@ -35,12 +35,9 @@
   margin: 0 5%;
 }
 
-/* // bookButtons should be just text buttons in color blue. */
 .bookButton {
   color: #0290ff;
   font-family: Montserrat, sans-serif;
-
-  /* font-size: 0.813rem; */
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -69,14 +66,15 @@
 }
 
 .bookAuthor {
-  font-family: Montserrat, sans-serif;
-  font-size: 1rem;
-  font-weight: normal;
+  margin: 0.15rem 0 0;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: 1.9px;
-  color: #121212;
+  letter-spacing: normal;
+  color: #4386bf;
 }
 
 .bookCategory {
@@ -98,6 +96,7 @@
   display: flex;
   flex-direction: column;
   margin: 5%;
+  gap: 15px;
 }
 
 .ovalContainer {
@@ -135,6 +134,7 @@
   flex-direction: column;
   margin: 5% 5%;
   color: black;
+  margin-left: 10px;
 }
 
 .currentContainer {
@@ -172,9 +172,46 @@
 }
 
 .updateButton {
+  font-family: Roboto, sans-serif;
   width: 11.5rem;
   height: 2.063rem;
   border-radius: 3px;
   background-color: #0290ff;
   color: white;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.percentage {
+  width: 4.25rem;
+  height: 2.438rem;
+  margin: 0.063rem 5.75rem 0 0.688rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.completed {
+  width: 5rem;
+  height: 1.125rem;
+  margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
 }
