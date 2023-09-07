@@ -5,7 +5,7 @@ import CategoriesPage from './pages/CategoriesPage';
 
 function App() {
   return (
-    <Router basename="/bookstore">
+    <Router basename="/">
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
